@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+input {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.25);
+  padding: 2rem 4rem;
+  border-radius: 6px;
+  width: max-content;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.user__input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.user__input input,
+.user__input label,
+.user__input span {
+  width: 100%;
+}
+
+.user__input input {
+  padding: 0.65rem;
+  outline: 0;
+  border: 2px solid hsl(0, 0%, 85%);
+  border-radius: 4px;
+}
+
+.user__input label {
+  color: hsl(0, 0%, 45%);
+  font-size: 1.6rem;
+}
+
+.user__input span {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: red;
+}
+
+::placeholder {
+  color: hsl(0, 0%, 45%);
+}
+
+.user__input input[type="submit"] {
+  margin-top: 1rem;
+  background-color: #845ec2;
+  color: #fff;
+  padding: 1.1rem 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+  border: 0;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .return {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    width: auto;
+    padding: 2rem;
+  }
+}
