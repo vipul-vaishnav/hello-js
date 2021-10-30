@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Nested DropDown Menu</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav__dropdown-btn">
+                <span class="nav__dropdown-text">Dropdown</span>
+                <span class="nav__dropdown-icon material-icons">
+                    menu
+                </span>
+            </div>
+            <div class="nav__dropdown-content">
+                <!-- main-menu -->
+                <ul class="nav__dropdown-list">
+                    <li class="nav__dropdown-list-item">
+                        <a href="#" class="nav__dropdown-list-link">
+                            <div class="nav__dropdown-list-link-block">
+                                <span class="nav__dropdown-list-link-text">Home</span>
+                                <span class="nav__dropdown-list-link-icon  material-icons">home</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__dropdown-list-item">
+                        <a href="#" class="nav__dropdown-list-link">
+                            <div class="nav__dropdown-list-link-block">
+                                <span class="nav__dropdown-list-link-text">Features</span>
+                                <span class="nav__dropdown-list-link-icon  material-icons">view_day</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__dropdown-list-item sub-menu">
+                        <a href="#" class="nav__dropdown-list-link">
+                            <div class="nav__dropdown-list-link-block">
+                                <span class="nav__dropdown-list-link-text">Settings</span>
+                                <span class="nav__dropdown-list-link-icon  material-icons">settings</span>
+                            </div>
+
+                            <div class="nav__dropdown-list-link-nest">
+                                <span class="material-icons">
+                                    navigate_next
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__dropdown-list-item">
+                        <a href="#" class="nav__dropdown-list-link">
+                            <div class="nav__dropdown-list-link-block">
+                                <span class="nav__dropdown-list-link-text">About</span>
+                                <span class="nav__dropdown-list-link-icon  material-icons">info</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav__dropdown-list-item">
+                        <a href="#" class="nav__dropdown-list-link">
+                            <div class="nav__dropdown-list-link-block">
+                                <span class="nav__dropdown-list-link-text">Contact</span>
+                                <span class="nav__dropdown-list-link-icon  material-icons">contact_support</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- settings sub menu -->
+                <ul class="settings">
+                    <li class="settings__item">
+                        <div class="back-btn">
+                            <span class="material-icons">
+                                arrow_back
+                            </span>
+                            <span class="text">
+                                Settings and Privacy
+                            </span>
+                        </div>
+                    </li>
+                    <!-- menu-items -->
+                    <li class="settings__item">
+                        <a href="#" class="settings__item-link">
+                            <span class="material-icons">
+                                settings_accessibility
+                            </span>
+                            <span class="text">Personal</span>
+                        </a>
+                    </li>
+                    <li class="settings__item">
+                        <a href="#" class="settings__item-link">
+                            <span class="material-icons">
+                                lock
+                            </span>
+                            <span class="text">Password</span>
+                        </a>
+                    </li>
+                    <li class="settings__item">
+                        <a href="#" class="settings__item-link">
+                            <span class="material-icons">
+                                local_activity
+                            </span>
+                            <span class="text">Activity Log</span>
+                        </a>
+                    </li>
+                    <li class="settings__item">
+                        <a href="#" class="settings__item-link">
+                            <span class="material-icons">
+                                language
+                            </span>
+                            <span class="text">Languages</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- scripts -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
